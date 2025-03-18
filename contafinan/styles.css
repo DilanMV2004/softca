@@ -1,0 +1,72 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Estilo del contenedor */
+.container {
+    flex: 5; /* Permite que el contenedor crezca y ocupe el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1px; /* Reducido de 10px a 5px */
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.welcome-box {
+    background-color: #07046E;
+    padding: 15px;
+    box-shadow: 0px 0px 8px rgba(55, 255, 100, 0.1);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+.welcome-box h2 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+nav ul li {
+    background-color: #F03709;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #F03709;
+}
+
+
+/* Estilo del footer */
+footer {
+    background-color: #030a64;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0; /* Reducido de 1em a 0.5em */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil para mejorar la visibilidad */
+}

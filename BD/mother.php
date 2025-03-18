@@ -1,0 +1,20 @@
+CREATE TABLE mother (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Nombres_Madre VARCHAR(100),
+    Apellidos_Madre VARCHAR(100),
+    Tipo_Documento_Madre VARCHAR(50),
+    Documento_Madre VARCHAR(50),
+    Lugar_Expedicion_Madre VARCHAR(100),
+    Fecha_de_Nacimiento_Madre DATE,
+    Edad_Madre INT,
+    Estado_Civil_Madre VARCHAR(50),
+    Direccion_Residencia_Madre VARCHAR(200),
+    Profesion_Madre VARCHAR(100),
+    Nombre_Empresa_Madre VARCHAR(100),
+    Telefono_Oficina_Madre VARCHAR(20),
+    Direccion_Oficina_Madre VARCHAR(200),
+    Telefono_Madre VARCHAR(20),
+    Email_Madre VARCHAR(100),
+    Celular_Madre VARCHAR(20),
+    Madre_ExAlumno VARCHAR(3)
+);

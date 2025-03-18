@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso de Matrícula - Colegio Americano de Barranquilla</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #3498db;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Proceso de Matrícula</h1>
+        <form action="enrollment_process.php" method="post">
+            <div class="form-group">
+                <label for="student_name">Nombre del Estudiante:</label>
+                <input type="text" id="student_name" name="student_name" required>
+            </div>
+            <div class="form-group">
+                <label for="payment">Método de Pago:</label>
+                <select id="payment" name="payment" required>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta_credito">Tarjeta de Crédito/Débito</option>
+                    <option value="transferencia">Transferencia</option>
+                    <option value="consignacion">Consignación Bancaria</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="documents">Documentos Complementarios:</label>
+                <input type="file" id="documents" name="documents[]" multiple required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="button">Completar Matrícula</button>
+            </div>
+        </form>
+        <a href="../index.php" class="button">Volver al Inicio</a>
+    </div>
+    <div class="footer">
+        <p>Colegio Americano de Barranquilla - Dirección: Carrera 38 # 74-179, Barranquilla, Colombia - Teléfono: 6053225100</p>
+    </div>
+</body>
+</html>

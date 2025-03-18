@@ -1,0 +1,20 @@
+CREATE TABLE father (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Nombres_Padre VARCHAR(100),
+    Apellidos_Padre VARCHAR(100),
+    Tipo_Documento_Padre VARCHAR(50),
+    Documento_Padre VARCHAR(50),
+    Lugar_Expedicion_Padre VARCHAR(100),
+    Fecha_de_Nacimiento_Padre DATE,
+    Edad_Padre INT,
+    Estado_Civil_Padre VARCHAR(50),
+    Direccion_Residencia_Padre VARCHAR(200),
+    Email_Padre VARCHAR(100),
+    Celular_Padre VARCHAR(20),
+    Profesion_Padre VARCHAR(100),
+    Nombre_Empresa_Padre VARCHAR(100),
+    Telefono_Oficina_Padre VARCHAR(20),
+    Direccion_Oficina_Padre VARCHAR(200),
+    Telefono_Residencia_Padre VARCHAR(20),
+    Padre_ExAlumno VARCHAR(3)
+);
